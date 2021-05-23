@@ -48,7 +48,7 @@ function clear(){
     console.log('in clear function');
     $( '#numberOneIn' ).val('');
     $( '#numberTwoIn' ).val('');
-    $('clickedBtn').removeClass();
+    $('button').removeClass();
     operator = null;
     console.log(operator);
 }
@@ -109,7 +109,7 @@ function getResults(){
 function displayResults(data){
     // checking to see that the function is being called
     console.log('in displayResults function');
-    $( '#result' ).html(`
+    $( '#results' ).html(`
         <h3>${data}</h3>
     `)
 } // end displayResults function

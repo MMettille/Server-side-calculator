@@ -12,26 +12,31 @@
 </head>
 <body>
     <h1>Server Side Calculator</h1>
-    <div class="calculator">
-        <label htmlfor="numberOneIn">Enter First Number</label>
+    <div id="description">
+        <p>This free calculator provides both simple and advanced mathmatical functions in a stunningly designed app!</p>
+    </div>
+    <div id="calculator">
+        <label htmlfor="numberOneIn">Enter Your First Number</label>
         <input type= "number" id="numberOneIn" class="input">
         <label htmlfor="operatorIn">What do you want to do?</label>
         <button id="plusBtn" class="operatorBtn">+</button>
         <button id="subtractBtn" class="operatorBtn">-</button>
         <button id="multiplyBtn" class="operatorBtn">*</button>
         <button id="divideBtn" class="operatorBtn">/</button>
-        <label htmlfor="numberTwoIn">Enter Second Number</label>
+        <label htmlfor="numberTwoIn">Enter Your Second Number</label>
         <input type="number" id="numberTwoIn" class="input">
         <button id="equalsBtn">=</button>
         <button id="clearBtn">C</button>
     </div>
     <div id="answer">
-        <h3 id="results"></h3>
+        <h3>The Answer to Your Problem: <section id="results"<section></section></h3>
     </div>
-    <div>
+    <div id="history">
+        <h4>History</h4>
         <ul id="answerList">
 
         </ul>
     </div>
+
 </body>
 </html>

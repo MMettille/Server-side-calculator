@@ -1,13 +1,29 @@
 body {
-    background-color: paleturquoise;
+    background-color: #40bf80;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px;
     padding: 10px;
 }
 
 .clickedBtn{
     background-color: gainsboro;
 }
+
+#answer,
+#calculator,
+#history {
+    margin: 25px;
+    padding: 15px;
+}
+
+#answer,
+#description{
+    text-align: center;
+}
+#description{
+    text-align: center;
+}
+
