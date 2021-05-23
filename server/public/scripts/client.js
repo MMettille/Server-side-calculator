@@ -60,7 +60,7 @@ function mathTime(){
     // post request to send the users input to the server
     $.ajax({
         method: 'POST',
-        url: '/calcualtor',
+        url: '/calculator',
         data: userInputs
     }).then(function(response){
         // calling the function getHistory to append to the DOM

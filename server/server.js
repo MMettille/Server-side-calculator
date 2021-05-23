@@ -30,14 +30,24 @@ app.post('/calculator', (req, res) => {
     if (operator === '+'){
         // declaring the result from line 11
         result = numberOne + numberTwo;
-        console.log(result)
+        console.log(result);
+    } else if (operator === '-'){
+        result = numberOne - numberTwo;
+        console.log(result);
+    } else if (operator === '*'){
+        result = numberOne * numberTwo;
+        console.log(result);
+    } else if (operator === '/'){
+        result = numberOne / numberTwo;
+        console.log(result);
     }
-    calculator = {
+    mathThings = {
         numberOne: numberOne,
         operator: operator,
         numberTwo: numberTwo,
         answer: result
     }
+    history.push(mathThings);
     res.sendStatus(200);
 })
 
