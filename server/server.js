@@ -22,15 +22,21 @@ app.get('/result', (req, res) => {
 // this is the post request from the function mathTime
 // here we do MATH!
 app.post('/calculator', (req, res) => {
-    let something = req.body;
-    let operator = userInputs.operator;
-    let numberOne = userInputs.numberOne
-    let numberTwo = userInputs.numberTwo;
+    let OwenSaysYes = req.body;
+    let operator = OwenSaysYes.operator;
+    let numberOne = Number(OwenSaysYes.numberOne);
+    let numberTwo = Number(OwenSaysYes.numberTwo);
     // if statements so we can do MATH
     if (operator === '+'){
         // declaring the result from line 11
         result = numberOne + numberTwo;
         console.log(result)
+    }
+    calculator = {
+        numberOne: numberOne,
+        operator: operator,
+        numberTwo: numberTwo,
+        answer: result
     }
     res.sendStatus(200);
 })
