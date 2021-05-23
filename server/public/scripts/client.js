@@ -19,33 +19,24 @@ function addition(){
     // checking to see that the function is being called
     console.log('in addition function');
     operator = '+';
-    console.log(operator);
 }
 
 function subtract(){
     // checking to see that the function is being called
     console.log('in subtract function');
     operator = '-';
-    console.log(operator);
 }
 
 function multiply(){
     // checking to see that the function is being called
     console.log('in multiply function');
     operator = '*';
-    console.log(operator);
 }
 
 function divide(){
     // checking to see that the function is being called
     console.log('in divide function');
     operator = '/'
-    console.log(operator);
-}
-
-function mathTime(){
-    // checking to see that the function is being called
-    console.log('in mathTime function');
 }
 
 function clear(){
@@ -55,6 +46,30 @@ function clear(){
     $( '#numberTwoIn' ).val('');
     operator = null;
     console.log(operator);
+}
+
+function mathTime(){
+    // checking to see that the function is being called
+    console.log('in mathTime function');
+    // create an object with all the things
+    let userInputs = {
+        numberOne: $( '#numberOneIn' ).val(),
+        operator: operator,
+        numberTwo: $( '#numberTwoIn' ).val()
+    }
+    // post request to send the users input to the server
+    $ajax({
+        method: 'POST',
+        url: '/calcualtor',
+        data: userInputs
+    }).then(function(response){
+        // calling the function getHistory to append to the DOM
+        getHistory();
+        // calling the function getResults to find the answer
+        getResults();
+    }).catch(function(error){
+        alert('error in mathTime function');
+    })
 }
 
 function getHistory(){
@@ -70,6 +85,11 @@ function getHistory(){
         alert('error in getHistory function');
     })
 } // end getHistory function
+
+function getResults(){
+    // checking to see that the function is being called
+    console.log('in getResults function');
+}
 
 function appendHistory(array){
     // checking to see that the function is being called
