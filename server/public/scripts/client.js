@@ -18,21 +18,29 @@ let operator;
 function addition(){
     // checking to see that the function is being called
     console.log('in addition function');
+    operator = '+';
+    console.log(operator);
 }
 
 function subtract(){
     // checking to see that the function is being called
     console.log('in subtract function');
+    operator = '-';
+    console.log(operator);
 }
 
 function multiply(){
     // checking to see that the function is being called
     console.log('in multiply function');
+    operator = '*';
+    console.log(operator);
 }
 
 function divide(){
     // checking to see that the function is being called
     console.log('in divide function');
+    operator = '/'
+    console.log(operator);
 }
 
 function mathTime(){
@@ -43,6 +51,10 @@ function mathTime(){
 function clear(){
     // checking to see that the function is being called
     console.log('in clear function');
+    $( '#numberOneIn' ).val('');
+    $( '#numberTwoIn' ).val('');
+    operator = null;
+    console.log(operator);
 }
 
 function getHistory(){
