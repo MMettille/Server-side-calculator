@@ -10,7 +10,8 @@ function readyNow(){
     $( '#multiplyBtn' ).on('click', multiply);
     $( '#divideBtn' ).on('click', divide);
     $( '#equalsBtn' ).on('click', mathTime);
-    $( '#clearBtn' ).on('click', clear)
+    $( '#clearBtn' ).on('click', clear);
+    $( "#myModal" ).modal('hide');
 }
 
 let operator;
