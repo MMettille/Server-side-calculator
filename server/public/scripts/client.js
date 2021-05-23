@@ -83,13 +83,31 @@ function getHistory(){
         appendHistory(response);
     }).catch(function(error){
         alert('error in getHistory function');
-    })
+    });
 } // end getHistory function
 
 function getResults(){
     // checking to see that the function is being called
     console.log('in getResults function');
-}
+    $.ajax({
+        method: 'GET',
+        url: '/results'
+    }).then(function(response){
+        result = response.result;
+        //call another function to display the results to the DOM
+        displayResults(result);
+    }).catch(function(error){
+        alert('error in getResults function');
+    });
+} // end getResults function
+
+function displayResults(data){
+    // checking to see that the function is being called
+    console.log('in displayResults function');
+    $( '#results' ).html(`
+        <h3>${data}</h3>
+    `)
+} // end displayResults function
 
 function appendHistory(array){
     // checking to see that the function is being called

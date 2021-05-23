@@ -7,8 +7,8 @@ app.use(express.static('server/public'));
 app.use(bodyParser.urlencoded({extended : true}));
 
 // variable set up
-let history = [];
-let answer;
+let history = []; // this is the array of all the math we did
+let result; // this is the result of the math we did
 
 // this send the history array to the client
 app.get('/history', (req, res) => {
@@ -17,7 +17,7 @@ app.get('/history', (req, res) => {
 
 
 
-
+// this is the post request from the function mathTime
 
 
 
