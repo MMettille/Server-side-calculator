@@ -11,7 +11,12 @@ function readyNow(){
     $( '#divideBtn' ).on('click', divide);
     $( '#equalsBtn' ).on('click', mathTime);
     $( '#clearBtn' ).on('click', clear);
-    $( "#myModal" ).modal('hide');
+    $( ".sizeOfBtn" ).click(function(){
+        $('#myModal').modal('toggle');
+    });
+    $( "#modal-header" ).click(function(){
+        $('#myModal').modal('toggle');
+    });
 }
 
 let operator;
