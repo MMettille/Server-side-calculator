@@ -58,7 +58,7 @@ function mathTime(){
         numberTwo: $( '#numberTwoIn' ).val()
     }
     // post request to send the users input to the server
-    $ajax({
+    $.ajax({
         method: 'POST',
         url: '/calcualtor',
         data: userInputs
@@ -91,7 +91,7 @@ function getResults(){
     console.log('in getResults function');
     $.ajax({
         method: 'GET',
-        url: '/results'
+        url: '/result'
     }).then(function(response){
         result = response.result;
         //call another function to display the results to the DOM
@@ -104,7 +104,7 @@ function getResults(){
 function displayResults(data){
     // checking to see that the function is being called
     console.log('in displayResults function');
-    $( '#results' ).html(`
+    $( '#result' ).html(`
         <h3>${data}</h3>
     `)
 } // end displayResults function

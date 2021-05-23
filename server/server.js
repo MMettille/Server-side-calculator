@@ -14,12 +14,26 @@ let result; // this is the result of the math we did
 app.get('/history', (req, res) => {
     res.send(history);
 })
-
-
+// this sends the result to the client
+app.get('/result', (req, res) => {
+    res.send({result: result});
+})
 
 // this is the post request from the function mathTime
-
-
+// here we do MATH!
+app.post('/calculator', (req, res) => {
+    let something = req.body;
+    let operator = userInputs.operator;
+    let numberOne = userInputs.numberOne
+    let numberTwo = userInputs.numberTwo;
+    // if statements so we can do MATH
+    if (operator === '+'){
+        // declaring the result from line 11
+        result = numberOne + numberTwo;
+        console.log(result)
+    }
+    res.sendStatus(200);
+})
 
 
 
