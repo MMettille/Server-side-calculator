@@ -1,0 +1,13 @@
+body {
+    background-color: paleturquoise;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.clickedBtn{
+    background-color: gainsboro;
+}

@@ -19,24 +19,28 @@ function addition(){
     // checking to see that the function is being called
     console.log('in addition function');
     operator = '+';
+    $(this).toggleClass('clickedBtn');
 }
 
 function subtract(){
     // checking to see that the function is being called
     console.log('in subtract function');
     operator = '-';
+    $(this).toggleClass('clickedBtn');
 }
 
 function multiply(){
     // checking to see that the function is being called
     console.log('in multiply function');
     operator = '*';
+    $(this).toggleClass('clickedBtn');
 }
 
 function divide(){
     // checking to see that the function is being called
     console.log('in divide function');
-    operator = '/'
+    operator = '/';
+    $(this).toggleClass('clickedBtn');
 }
 
 function clear(){
@@ -44,6 +48,7 @@ function clear(){
     console.log('in clear function');
     $( '#numberOneIn' ).val('');
     $( '#numberTwoIn' ).val('');
+    $('clickedBtn').removeClass();
     operator = null;
     console.log(operator);
 }
