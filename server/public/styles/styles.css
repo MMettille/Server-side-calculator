@@ -61,3 +61,14 @@ h1 {
 .modal-backdrop {
     z-index: -1;
   }
+
+/* .backgroundBtn {
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+} */
+
+.redBtn {
+    background-color: red;
+}

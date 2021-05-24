@@ -137,16 +137,14 @@ function appendHistory(array){
 // Customizing background color functionality!
 
 function saveIt(){
-    console.log('in saveIt function')
     $('#myModal').modal('hide');
 }
+
 function closeIt(){
-    console.log('in closeIt function');
     $('body').css({'background-color':'#d9f2d9'})
     $('#myModal').modal('hide');
 }
 
 function turnItRed(){
-    console.log('in turnItWhite function');
     $('body').css({'background-color':'red'})
 }
