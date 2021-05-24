@@ -4,41 +4,20 @@ function readyNow(){
     // checking to see that jQuery has been loaded and it is safe to manipulate the DOM
     console.log('in readyNow function')
     getHistory();
-    // buttons
+    // buttons for doing math
     $(  '#plusBtn' ).on('click', addition);
     $( '#subtractBtn' ).on('click', subtract);
     $( '#multiplyBtn' ).on('click', multiply);
     $( '#divideBtn' ).on('click', divide);
     $( '#equalsBtn' ).on('click', mathTime);
     $( '#clearBtn' ).on('click', clear);
+    // Customizing background color
     $( '.sizeOfBtn' ).click(function(){
         $('#myModal').modal('show');
     });
     $( '.close' ).on('click', closeIt);
     $( '.save' ).on('click', saveIt);
-    // !!! WORKS !!!
-    // $( ".close" ).click(function(){
-    //     $('#myModal').modal('hide');
-    // });
-    // $( ".save" ).click(function(){
-    //     $('#myModal').modal('hide');
-    // });
-    // $( ".whiteBtn" ).on('click', turnItWhite);
-}
-
-function saveIt(){
-    console.log('in saveIt function')
-    $('#myModal').modal('hide');
-}
-function closeIt(){
-    console.log('in closeIt function');
-    $('body').css({'background-color':'#d9f2d9'})
-    $('#myModal').modal('hide');
-}
-
-function turnItRed(){
-    console.log('in turnItWhite function');
-    $('body').css({'background-color':'red'})
+    $( ".redBtn" ).on('click', turnItRed);
 }
 
 let operator;
@@ -154,3 +133,20 @@ function appendHistory(array){
         `) //these parts will show up on the server side. Declaring them now so I don't forget.
     }
 } // end appendHistory function
+
+// Customizing background color functionality!
+
+function saveIt(){
+    console.log('in saveIt function')
+    $('#myModal').modal('hide');
+}
+function closeIt(){
+    console.log('in closeIt function');
+    $('body').css({'background-color':'#d9f2d9'})
+    $('#myModal').modal('hide');
+}
+
+function turnItRed(){
+    console.log('in turnItWhite function');
+    $('body').css({'background-color':'red'})
+}
