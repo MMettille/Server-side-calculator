@@ -11,14 +11,14 @@ function readyNow(){
     $( '#divideBtn' ).on('click', divide);
     $( '#equalsBtn' ).on('click', mathTime);
     $( '#clearBtn' ).on('click', clear);
-    // Customizing background color
+    // Modal Buttons
     $( '.sizeOfBtn' ).click(function(){
         $('#myModal').modal('show');
     });
     $( '.close' ).on('click', closeIt);
     $( '.save' ).on('click', saveIt);
+    // customizing background color
     $( '#redImg' ).on('click', turnItRed)
-    // $( ".redBtn" ).on('click', turnItRed);
 }
 
 let operator;
@@ -56,7 +56,7 @@ function clear(){
     console.log('in clear function');
     $( '#numberOneIn' ).val('');
     $( '#numberTwoIn' ).val('');
-    $('button').removeClass();
+    $('button').removeClass('clickedBtn');
     operator = null;
     console.log(operator);
 }
@@ -64,6 +64,8 @@ function clear(){
 function mathTime(){
     // checking to see that the function is being called
     console.log('in mathTime function');
+    //darken the button
+    $(this).toggleClass('clickedBtn');
     // create an object with all the things
     let userInputs = {
         numberOne: $( '#numberOneIn' ).val(),

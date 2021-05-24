@@ -12,6 +12,12 @@ h1 {
     background-color: gainsboro;
 }
 
+.operatorBtn{
+    height: 38px;
+    width: 38px;
+    border-radius: 10px;
+}
+
 #answer,
 #calculator,
 #history {
