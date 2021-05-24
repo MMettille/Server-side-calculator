@@ -17,7 +17,8 @@ function readyNow(){
     });
     $( '.close' ).on('click', closeIt);
     $( '.save' ).on('click', saveIt);
-    $( ".redBtn" ).on('click', turnItRed);
+    $( '#redImg' ).on('click', turnItRed)
+    // $( ".redBtn" ).on('click', turnItRed);
 }
 
 let operator;

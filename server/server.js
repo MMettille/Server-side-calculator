@@ -40,6 +40,9 @@ app.post('/calculator', (req, res) => {
     } else if (operator === '/'){
         result = numberOne / numberTwo;
         console.log(result);
+    } else {
+        res.status(400).send(`Invalid operator ${operator}. Please input a valid operator`)
+        return;
     }
     mathThings = {
         numberOne: numberOne,
