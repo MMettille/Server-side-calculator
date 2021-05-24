@@ -14,9 +14,21 @@ function readyNow(){
     $( ".sizeOfBtn" ).click(function(){
         $('#myModal').modal('show');
     });
-    $( ".close" ).click(function(){
-        $('#myModal').modal('hide');
-    });
+    
+    // !!! WORKS !!!
+    // $( ".close" ).click(function(){
+    //     $('#myModal').modal('hide');
+    // });
+    // $( ".save" ).click(function(){
+    //     $('#myModal').modal('hide');
+    // });
+    // $( ".whiteBtn" ).on('click', turnItWhite);
+}
+
+function( "close")
+function turnItWhite(){
+    console.log('in turnItWhite function');
+    $('body').css({'background-color':'white'})
 }
 
 let operator;
