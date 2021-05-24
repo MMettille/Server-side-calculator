@@ -12,10 +12,10 @@ function readyNow(){
     $( '#equalsBtn' ).on('click', mathTime);
     $( '#clearBtn' ).on('click', clear);
     $( ".sizeOfBtn" ).click(function(){
-        $('#myModal').modal('toggle');
+        $('#myModal').modal('show');
     });
-    $( "#modal-header" ).click(function(){
-        $('#myModal').modal('toggle');
+    $( ".close" ).click(function(){
+        $('#myModal').modal('hide');
     });
 }
 
