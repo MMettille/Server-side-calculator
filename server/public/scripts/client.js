@@ -18,7 +18,12 @@ function readyNow(){
     $( '.close' ).on('click', closeIt);
     $( '.save' ).on('click', saveIt);
     // customizing background color
-    $( '#redImg' ).on('click', turnItRed)
+    $( '#redImg' ).on('click', turnItRed);
+    $(  '#yellowImg' ).on('click', turnItYellow);
+    $( '#greenImg' ).on('click', turnItGreen);
+    $( '#blueImg' ).on('click', turnItBlue);
+    $( '#purpleImg' ).on('click', turnItPurple);
+    $( '#greyImg' ).on('click', turnItGrey);
 }
 
 let operator;
@@ -137,17 +142,39 @@ function appendHistory(array){
     }
 } // end appendHistory function
 
-// Customizing background color functionality!
-
+// Modal functionality
 function saveIt(){
     $('#myModal').modal('hide');
+    // need to find out how to ACTUALLY save changes // undo button clicks when closed or cancelled
 }
 
 function closeIt(){
-    $('body').css({'background-color':'#d9f2d9'})
+    $('body').css({'background-color':'white'})
     $('#myModal').modal('hide');
+    // need to find out how to ACTUALLY save changes // undo button clicks when closed or cancelled
 }
 
+// customizing background colors!
 function turnItRed(){
-    $('body').css({'background-color':'red'})
+    $('body').css({'background-color':'#ff9999'})
+}
+
+function turnItYellow(){
+    $('body').css({'background-color':'#ffffb3'})
+}
+
+function turnItGreen(){
+    $('body').css({'background-color':'#d9f2d9'})
+}
+
+function turnItBlue(){
+    $('body').css({'background-color':'#b3e0ff'})
+}
+
+function turnItPurple(){
+    $('body').css({'background-color':'#ddccff'})
+}
+
+function turnItGrey(){
+    $('body').css({'background-color':'#b3b3b3'})
 }

@@ -1,5 +1,5 @@
 body {
-    background-color: #d9f2d9;
+    background-color: white;
 }
 
 h1 {
@@ -17,7 +17,6 @@ h1 {
     width: 38px;
     border-radius: 10px;
 }
-
 #answer,
 #calculator,
 #history {
@@ -70,5 +69,6 @@ h1 {
 
 img {
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
