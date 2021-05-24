@@ -25,9 +25,9 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 3. User inputs second number
 4. User presses the '=' button, which will calculate the problem for them!
 5. OPTIONAL Background Color Functionality:
-    a. User clicks the paint button in the bottom left hand corner
-    b. User clicks which color they would like for their background
-    c. User clicks save changes button.
+    - User clicks the paint button in the bottom left hand corner
+    - User clicks which color they would like for their background
+    - User clicks save changes button.
 
 ## Built With
 
@@ -39,7 +39,7 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 - Bootstrap
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. A huge shoutout to Dane, my instructor, you taught me so much! And to my co-parent, Isaac - thank you for all that you do for me and for our family! You've picked up a lot of responsibility while I was at Prime and that has not gone unnoticed.
 
 ## Support
 If you have suggestions or issues, please email me at [mary.mettille.brist@gmial.com].
