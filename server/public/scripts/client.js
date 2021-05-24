@@ -11,10 +11,11 @@ function readyNow(){
     $( '#divideBtn' ).on('click', divide);
     $( '#equalsBtn' ).on('click', mathTime);
     $( '#clearBtn' ).on('click', clear);
-    $( ".sizeOfBtn" ).click(function(){
+    $( '.sizeOfBtn' ).click(function(){
         $('#myModal').modal('show');
     });
-    
+    $( '.close' ).on('click', closeIt);
+    $( '.save' ).on('click', saveIt);
     // !!! WORKS !!!
     // $( ".close" ).click(function(){
     //     $('#myModal').modal('hide');
@@ -25,10 +26,19 @@ function readyNow(){
     // $( ".whiteBtn" ).on('click', turnItWhite);
 }
 
-function( "close")
-function turnItWhite(){
+function saveIt(){
+    console.log('in saveIt function')
+    $('#myModal').modal('hide');
+}
+function closeIt(){
+    console.log('in closeIt function');
+    $('body').css({'background-color':'#d9f2d9'})
+    $('#myModal').modal('hide');
+}
+
+function turnItRed(){
     console.log('in turnItWhite function');
-    $('body').css({'background-color':'white'})
+    $('body').css({'background-color':'red'})
 }
 
 let operator;
