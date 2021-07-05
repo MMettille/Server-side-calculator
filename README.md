@@ -10,7 +10,7 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](https:
 
 ## Screen Shot
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+![Image of a blue and green to-do list](./Image_of_App.png)
 
 ### Prerequisites
 
