@@ -6,7 +6,7 @@ _Duration: 2 Day Sprint_
 
 A simple mathmatical calculator with the option to customize your background coloring.
 
-To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
+To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](https://mmettille-jquery-calculator.herokuapp.com/)
 
 ## Screen Shot
 
